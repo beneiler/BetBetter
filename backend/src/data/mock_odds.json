@@ -1,0 +1,110 @@
+[
+  {
+    "book": "BookA",
+    "eventId": "E1001",
+    "eventName": "Bears vs Packers",
+    "selection": "Bears",
+    "market": "Moneyline",
+    "format": "american",
+    "price": 140
+  },
+  {
+    "book": "BookB",
+    "eventId": "E1001",
+    "eventName": "Bears vs Packers",
+    "selection": "Bears",
+    "market": "Moneyline",
+    "format": "decimal",
+    "price": 2.25
+  },
+  {
+    "book": "BookA",
+    "eventId": "E1001",
+    "eventName": "Bears vs Packers",
+    "selection": "Packers",
+    "market": "Moneyline",
+    "format": "american",
+    "price": -150
+  },
+  {
+    "book": "BookB",
+    "eventId": "E1001",
+    "eventName": "Bears vs Packers",
+    "selection": "Packers",
+    "market": "Moneyline",
+    "format": "decimal",
+    "price": 1.65
+  },
+  {
+    "book": "BookA",
+    "eventId": "E2001",
+    "eventName": "Giants vs Jets",
+    "selection": "Giants",
+    "market": "Moneyline",
+    "format": "american",
+    "price": 105
+  },
+  {
+    "book": "BookB",
+    "eventId": "E2001",
+    "eventName": "Giants vs Jets",
+    "selection": "Giants",
+    "market": "Moneyline",
+    "format": "decimal",
+    "price": 2.02
+  },
+  {
+    "book": "BookA",
+    "eventId": "E2001",
+    "eventName": "Giants vs Jets",
+    "selection": "Jets",
+    "market": "Moneyline",
+    "format": "american",
+    "price": -110
+  },
+  {
+    "book": "BookB",
+    "eventId": "E2001",
+    "eventName": "Giants vs Jets",
+    "selection": "Jets",
+    "market": "Moneyline",
+    "format": "decimal",
+    "price": 1.9
+  },
+  {
+    "book": "BookA",
+    "eventId": "E3001",
+    "eventName": "Lions vs Vikings",
+    "selection": "Lions",
+    "market": "Moneyline",
+    "format": "american",
+    "price": 125
+  },
+  {
+    "book": "BookC",
+    "eventId": "E3001",
+    "eventName": "Lions vs Vikings",
+    "selection": "Lions",
+    "market": "Moneyline",
+    "format": "decimal",
+    "price": 2.1
+  },
+  {
+    "book": "BookA",
+    "eventId": "E3001",
+    "eventName": "Lions vs Vikings",
+    "selection": "Vikings",
+    "market": "Moneyline",
+    "format": "american",
+    "price": -130
+  },
+  {
+    "book": "BookC",
+    "eventId": "E3001",
+    "eventName": "Lions vs Vikings",
+    "selection": "Vikings",
+    "market": "Moneyline",
+    "format": "decimal",
+    "price": 1.77
+  }
+]

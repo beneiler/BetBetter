@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BetBetter — Odds Comparison (MVP)</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <h1>BetBetter</h1>
+    <p class="subtitle">Simple odds comparison demo (T1–T4)</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <button id="refreshBtn">Refresh Odds</button>
+    </section>
+
+    <section>
+      <table id="oddsTable">
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Selection</th>
+            <th>Market</th>
+            <th>Book</th>
+            <th>Decimal</th>
+            <th>American</th>
+            <th>Best?</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <small>© BetBetter MVP</small>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
