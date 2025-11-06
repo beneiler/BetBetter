@@ -1,4 +1,3 @@
-
 import express from 'express';
 import cors from 'cors';
 import fs from 'fs';
@@ -14,12 +13,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Health check
+// Health check – quick way to confirm backend is running
 app.get('/api/health', (_req, res) => {
   res.json({ status: 'ok', service: 'betbetter-backend' });
 });
 
-// Odds endpoint (mock data -> normalize -> compare)
+// Odds endpoint – reads mock data, normalizes, compares, returns result
 app.get('/api/odds', (_req, res) => {
   try {
     const dataPath = path.join(__dirname, 'src', 'data', 'mock_odds.json');
@@ -29,9 +28,12 @@ app.get('/api/odds', (_req, res) => {
     const normalized = normalizeOdds(data);
     const compared = compareOdds(normalized);
 
-    res.json({ meta: { count: compared.length }, data: compared });
+    res.json({
+      meta: { count: compared.length },
+      data: compared
+    });
   } catch (err) {
-    console.error(err);
+    console.error('Error loading odds:', err);
     res.status(500).json({ error: 'Failed to load odds' });
   }
 });

@@ -6,6 +6,13 @@ async function fetchOdds() {
   return json.data || [];
 }
 
+function formatAmerican(value) {
+  if (value == null || value === '') return '';
+  const num = Number(value);
+  if (Number.isNaN(num)) return value;
+  return num > 0 ? `+${num}` : `${num}`;
+}
+
 function renderTable(rows) {
   const tbody = document.querySelector('#oddsTable tbody');
   tbody.innerHTML = '';
@@ -13,13 +20,12 @@ function renderTable(rows) {
     const tr = document.createElement('tr');
     if (r.isBest) tr.classList.add('best');
     tr.innerHTML = `
-      <td>${r.eventName}</td>
-      <td>${r.selection}</td>
-      <td>${r.market}</td>
-      <td>${r.book}</td>
-      <td>${r.priceDecimal}</td>
-      <td>${r.priceAmerican}</td>
-      <td>${r.isBest ? '★' : ''}</td>
+      <td data-label="Event">${r.eventName}</td>
+      <td data-label="Selection">${r.selection}</td>
+      <td data-label="Market">${r.market}</td>
+      <td data-label="Book">${r.book}</td>
+      <td data-label="Odds">${formatAmerican(r.priceAmerican)}</td>
+      <td data-label="Best?">${r.isBest ? '★' : ''}</td>
     `;
     tbody.appendChild(tr);
   }

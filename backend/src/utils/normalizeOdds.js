@@ -1,4 +1,3 @@
-
 export function normalizeOdds(quotes) {
   return quotes.map(q => {
     const fmt = (q.format || '').toLowerCase();
@@ -12,7 +11,7 @@ export function normalizeOdds(quotes) {
       priceAmerican = Number(q.price);
       priceDecimal = americanToDecimal(priceAmerican);
     } else {
-      // default: assume decimal if unknown
+      // Default: assume decimal if unknown
       priceDecimal = Number(q.price);
       priceAmerican = decimalToAmerican(priceDecimal);
     }
@@ -39,7 +38,7 @@ function decimalToAmerican(decimal) {
   return Math.round(-100 / (decimal - 1));
 }
 
-function round(n, dp=2) {
+function round(n, dp = 2) {
   const f = Math.pow(10, dp);
   return Math.round(n * f) / f;
 }
