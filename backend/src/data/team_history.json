@@ -1,0 +1,42 @@
+[
+  {
+    "teamId": "CHI",
+    "teamName": "Bears",
+    "opponent": "Packers",
+    "date": "2025-09-10",
+    "moneylineResult": "win",
+    "totalResult": "over",
+    "closingSpread": 2.5,
+    "spreadResult": "cover"
+  },
+  {
+    "teamId": "CHI",
+    "teamName": "Bears",
+    "opponent": "Lions",
+    "date": "2025-09-17",
+    "moneylineResult": "loss",
+    "totalResult": "under",
+    "closingSpread": -3.5,
+    "spreadResult": "no_cover"
+  },
+  {
+    "teamId": "GB",
+    "teamName": "Packers",
+    "opponent": "Bears",
+    "date": "2025-09-10",
+    "moneylineResult": "loss",
+    "totalResult": "over",
+    "closingSpread": -2.5,
+    "spreadResult": "no_cover"
+  },
+  {
+    "teamId": "GB",
+    "teamName": "Packers",
+    "opponent": "Vikings",
+    "date": "2025-09-24",
+    "moneylineResult": "win",
+    "totalResult": "over",
+    "closingSpread": 1.5,
+    "spreadResult": "cover"
+  }
+]
