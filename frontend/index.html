@@ -1,25 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BetBetter — Odds Comparison (MVP)</title>
+  <title>BetBetter — Odds + Team Trends</title>
   <link rel="stylesheet" href="./styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
 <body>
   <header>
     <h1>BetBetter</h1>
-    <p class="subtitle">Simple odds comparison demo (T1–T4)</p>
+    <p class="subtitle">Odds comparison (T1–T4) + Team Trends (T10/T11)</p>
   </header>
 
   <main>
+    <!-- ===== Odds table (fixed-height scroll) ===== -->
     <section class="controls">
-      <button id="refreshBtn">Refresh Odds</button>
+      <button id="refreshBtn" type="button">Refresh Odds</button>
+      <span id="status" class="status"></span>
     </section>
 
-    <section>
-      <table id="oddsTable">
+    <section class="panel scroll-panel">   <!-- NEW wrapper -->
+      <table id="oddsTable" class="table">
         <thead>
           <tr>
             <th>Event</th>
@@ -32,6 +34,40 @@
         </thead>
         <tbody></tbody>
       </table>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ===== Team Trends charts (fixed height) ===== -->
+    <section id="team-trends">
+      <h2>Team Trends</h2>
+
+      <div class="controls">
+        <label>Team ID: <input id="teamIdInput" value="CHI" /></label>
+        <label>Window:
+          <select id="windowSelect">
+            <option value="3">3</option>
+            <option value="5" selected>5</option>
+            <option value="10">10</option>
+          </select>
+        </label>
+        <button id="loadTrends" type="button">Load Trends</button>
+      </div>
+
+      <div class="panel chartBox">
+        <h3>Rolling Win Rate</h3>
+        <canvas id="winRateChart" height="220"></canvas>
+      </div>
+
+      <div class="panel chartBox">
+        <h3>OU Hit Rate (OVER)</h3>
+        <canvas id="ouRateChart" height="220"></canvas>
+      </div>
+
+      <div class="panel chartBox">
+        <h3>Streak Timeline</h3>
+        <canvas id="streakChart" height="220"></canvas>
+      </div>
     </section>
   </main>
 

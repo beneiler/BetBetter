@@ -171,3 +171,16 @@ footer {
   margin-top: 24px;
   font-size: 13px;
 }
+
+.chartBox {
+  height: 260px;           /* fixed panel height */
+  overflow: hidden;        /* nothing can grow past this */
+  position: relative;
+}
+
+.chartBox canvas {
+  display: block;
+  width: 100% !important;
+  height: 220px !important;   /* hard cap canvas height */
+  max-height: 220px !important;
+}
