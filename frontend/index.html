@@ -10,7 +10,7 @@
 <body>
   <header>
     <h1>BetBetter</h1>
-    <p class="subtitle">Odds comparison (T1–T4) + Team Trends (T10/T11)</p>
+    <p class="subtitle">Odds comparison (T1–T4) + Team Trends (T10/T11) + Line Movement (S4)</p>
   </header>
 
   <main>
@@ -68,6 +68,54 @@
         <h3>Streak Timeline</h3>
         <canvas id="streakChart" height="220"></canvas>
       </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section id="line-movement">
+      <h2>Line Movement</h2>
+
+      <div class="controls">
+        <button id="captureSnapshotBtn" type="button" title="Capture current odds snapshot">📸 Capture Snapshot</button>
+        <span id="snapshotStatus" class="status"></span>
+      </div>
+
+      <div class="controls">
+        <label>Event:
+          <select id="eventSelect">
+            <option value="">-- Select Event --</option>
+          </select>
+        </label>
+        <label>Selection:
+          <select id="selectionSelect" disabled>
+            <option value="">-- Select Selection --</option>
+          </select>
+        </label>
+        <label>Market:
+          <select id="marketSelect" disabled>
+            <option value="">-- Select Market --</option>
+          </select>
+        </label>
+        <label>Time Window:
+          <select id="timeWindowSelect">
+            <option value="">All Time</option>
+            <option value="1">1 Hour</option>
+            <option value="6">6 Hours</option>
+            <option value="24" selected>24 Hours</option>
+            <option value="168">7 Days</option>
+          </select>
+        </label>
+        <button id="loadLineMovementBtn" type="button" disabled>Load Line Movement</button>
+      </div>
+
+      <div id="lineMovementStatus" class="status"></div>
+
+      <div class="panel chartBox">
+        <h3>Odds Movement Chart</h3>
+        <canvas id="lineMovementChart" height="280"></canvas>
+      </div>
+
+      <div id="movementMetrics" class="metrics-panel"></div>
     </section>
   </main>
 

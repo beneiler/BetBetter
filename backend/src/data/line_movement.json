@@ -1,0 +1,110 @@
+[
+  {
+    "timestamp": "2025-11-29T17:15:23.912Z",
+    "eventId": "E1001",
+    "eventName": "Bears vs Packers",
+    "selection": "Bears",
+    "market": "Moneyline",
+    "book": "BookA",
+    "priceAmerican": 140
+  },
+  {
+    "timestamp": "2025-11-29T17:15:23.912Z",
+    "eventId": "E1001",
+    "eventName": "Bears vs Packers",
+    "selection": "Bears",
+    "market": "Moneyline",
+    "book": "BookB",
+    "priceAmerican": 125
+  },
+  {
+    "timestamp": "2025-11-29T17:15:23.912Z",
+    "eventId": "E1001",
+    "eventName": "Bears vs Packers",
+    "selection": "Packers",
+    "market": "Moneyline",
+    "book": "BookA",
+    "priceAmerican": -150
+  },
+  {
+    "timestamp": "2025-11-29T17:15:23.912Z",
+    "eventId": "E1001",
+    "eventName": "Bears vs Packers",
+    "selection": "Packers",
+    "market": "Moneyline",
+    "book": "BookB",
+    "priceAmerican": -154
+  },
+  {
+    "timestamp": "2025-11-29T17:15:23.912Z",
+    "eventId": "E2001",
+    "eventName": "Giants vs Jets",
+    "selection": "Giants",
+    "market": "Moneyline",
+    "book": "BookA",
+    "priceAmerican": 105
+  },
+  {
+    "timestamp": "2025-11-29T17:15:23.912Z",
+    "eventId": "E2001",
+    "eventName": "Giants vs Jets",
+    "selection": "Giants",
+    "market": "Moneyline",
+    "book": "BookB",
+    "priceAmerican": 102
+  },
+  {
+    "timestamp": "2025-11-29T17:15:23.912Z",
+    "eventId": "E2001",
+    "eventName": "Giants vs Jets",
+    "selection": "Jets",
+    "market": "Moneyline",
+    "book": "BookA",
+    "priceAmerican": -110
+  },
+  {
+    "timestamp": "2025-11-29T17:15:23.912Z",
+    "eventId": "E2001",
+    "eventName": "Giants vs Jets",
+    "selection": "Jets",
+    "market": "Moneyline",
+    "book": "BookB",
+    "priceAmerican": -111
+  },
+  {
+    "timestamp": "2025-11-29T17:15:23.912Z",
+    "eventId": "E3001",
+    "eventName": "Lions vs Vikings",
+    "selection": "Lions",
+    "market": "Moneyline",
+    "book": "BookA",
+    "priceAmerican": 125
+  },
+  {
+    "timestamp": "2025-11-29T17:15:23.912Z",
+    "eventId": "E3001",
+    "eventName": "Lions vs Vikings",
+    "selection": "Lions",
+    "market": "Moneyline",
+    "book": "BookC",
+    "priceAmerican": 110
+  },
+  {
+    "timestamp": "2025-11-29T17:15:23.912Z",
+    "eventId": "E3001",
+    "eventName": "Lions vs Vikings",
+    "selection": "Vikings",
+    "market": "Moneyline",
+    "book": "BookA",
+    "priceAmerican": -130
+  },
+  {
+    "timestamp": "2025-11-29T17:15:23.912Z",
+    "eventId": "E3001",
+    "eventName": "Lions vs Vikings",
+    "selection": "Vikings",
+    "market": "Moneyline",
+    "book": "BookC",
+    "priceAmerican": -130
+  }
+]

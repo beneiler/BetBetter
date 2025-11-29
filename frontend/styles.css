@@ -184,3 +184,181 @@ footer {
   height: 220px !important;   /* hard cap canvas height */
   max-height: 220px !important;
 }
+
+/* Panel styling */
+.panel {
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(11, 15, 22, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 16px;
+}
+
+.scroll-panel {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 32px 0;
+}
+
+.status {
+  color: var(--muted);
+  font-size: 13px;
+  margin-left: 12px;
+}
+
+/* Form elements */
+label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--fg);
+  font-size: 14px;
+}
+
+input,
+select {
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--fg);
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.15s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.02);
+  transform: translateY(0);
+}
+
+/* Line Movement specific styles */
+#line-movement h2 {
+  margin-bottom: 16px;
+  font-size: 22px;
+  color: var(--fg);
+}
+
+#lineMovementChart {
+  height: 280px !important;
+  max-height: 280px !important;
+}
+
+/* Metrics panel */
+.metrics-panel {
+  margin-top: 16px;
+}
+
+.metrics-panel h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: var(--fg);
+}
+
+.metrics-panel h4 {
+  margin: 16px 0 8px 0;
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.metric-card {
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.metric-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  font-size: 13px;
+}
+
+.metric-row span:first-child {
+  color: var(--muted);
+}
+
+.metric-row span:last-child {
+  color: var(--fg);
+  font-weight: 500;
+}
+
+.metric-row .positive {
+  color: #4caf50;
+}
+
+.metric-row .negative {
+  color: #f44336;
+}
+
+.metric-row .neutral {
+  color: var(--muted);
+}
+
+.significant-movements {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.significant-movements li {
+  padding: 8px 12px;
+  margin-bottom: 4px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+  font-size: 13px;
+  border-left: 3px solid var(--accent);
+}
+
+.significant-movements strong {
+  color: var(--accent);
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 32px;
+}
+
+section h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+
